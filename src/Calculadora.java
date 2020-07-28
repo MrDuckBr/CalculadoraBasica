@@ -16,6 +16,7 @@ public class Calculadora implements ActionListener {
 
     public Calculadora(){
         janela = new JFrame("Calculadora");
+        janela.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         numero1 = new JLabel("Numero 1: ");
         numero2 = new JLabel("Numero 2:");
         campoNumero1 = new JTextField();
@@ -30,7 +31,6 @@ public class Calculadora implements ActionListener {
     }
 
     private void montarJanela(){
-        janela.setSize(400,300);
         janela.setLayout(new BorderLayout());
 
         JPanel painel_superior = new JPanel();
